@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="xPowerYText">x<sup><small>y</small></sup></string>
+    <string name="xSquaredText">x<sup><small>2</small></sup></string>
+    <string name="LogText">log</string>
+    <string name="trigSinText">sin</string>
+    <string name="trigCosText">cos</string>
+    <string name="trigTanText">tan</string>
+    <string name="absoluteValueText">|x|</string>
+    <string name="piText">π</string>
+    <string name="eText">e</string>
+    <string name="squareRootText">√</string>
+
+
+</resources>

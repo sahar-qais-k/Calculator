@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <OnClick motion:targetId="@+id/Scien" motion:clickAction="toggle" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/logButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="213dp"
+            motion:layout_constraintStart_toEndOf="@+id/line_hor1"
+            motion:transitionEasing="cubic(0.2,0.2,1,0.99)" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/sinButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="213dp"
+            motion:layout_editor_absoluteX="136dp"
+            motion:layout_constraintStart_toEndOf="@+id/line_hor1" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/lnButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="213dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/divButton" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/tanButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="213dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/divButton" />
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintTop_toTopOf="@+id/plusButton"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver2"
+            android:id="@+id/divButton"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/cosButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="213dp"
+            motion:layout_editor_absoluteX="394dp"
+            motion:layout_constraintStart_toEndOf="@+id/divButton" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/xPowerYbutton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="315dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/clear_button" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/absolute"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="417dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/sign" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/squareRoot"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="519dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/mode" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:id="@+id/piButton"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            motion:layout_editor_absoluteY="621dp"
+            motion:layout_editor_absoluteX="361dp"
+            motion:layout_constraintStart_toEndOf="@+id/result" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/logButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textNumber"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="48dp"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:id="@+id/sinButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver3"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@id/logButton" />
+        <Constraint
+            android:id="@+id/cosButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver2"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver3"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@id/logButton" />
+        <Constraint
+            android:id="@+id/lnButton"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver2"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@id/logButton"
+            motion:layout_constraintEnd_toStartOf="@id/line_ver4" />
+        <Constraint
+            android:id="@+id/plusButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@id/line_hor5"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/minusButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver3"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/multiButton"
+            motion:layout_constraintEnd_toStartOf="@+id/line_ver2"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver3"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/divButton"
+            motion:layout_constraintEnd_toEndOf="@id/lnButton"
+            motion:layout_constraintStart_toEndOf="@+id/line_ver2"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/tanButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/logButton"
+            motion:layout_constraintStart_toEndOf="@id/line_ver4" />
+        <Constraint
+            android:id="@+id/Scien"
+            motion:layout_constraintEnd_toEndOf="@+id/plusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@+id/line_hor4"
+            motion:layout_constraintStart_toStartOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/digit_0"
+            motion:layout_constraintEnd_toEndOf="@+id/minusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/Scien"
+            motion:layout_constraintStart_toStartOf="@+id/minusButton" />
+        <Constraint
+            android:id="@+id/dot"
+            motion:layout_constraintEnd_toEndOf="@+id/multiButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/Scien"
+            motion:layout_constraintStart_toStartOf="@+id/multiButton" />
+        <Constraint
+            android:id="@+id/result"
+            motion:layout_constraintEnd_toEndOf="@+id/tanButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/Scien"
+            motion:layout_constraintStart_toStartOf="@+id/divButton" />
+        <Constraint
+            android:id="@+id/piButton"
+            motion:layout_constraintEnd_toEndOf="@+id/tanButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintStart_toStartOf="@+id/tanButton"
+            motion:layout_constraintTop_toTopOf="@+id/digit_1" />
+        <Constraint
+            android:id="@+id/digit_7"
+            motion:layout_constraintEnd_toEndOf="@+id/plusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@+id/line_hor1"
+            motion:layout_constraintStart_toStartOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/digit_4"
+            motion:layout_constraintEnd_toEndOf="@+id/plusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@+id/line_hor2"
+            motion:layout_constraintStart_toStartOf="@+id/plusButton" />
+        <Constraint
+            android:layout_height="75dp"
+            motion:layout_constraintStart_toStartOf="@+id/tanButton"
+            motion:layout_constraintTop_toTopOf="@+id/plusButton"
+            motion:layout_constraintEnd_toEndOf="@+id/tanButton"
+            android:layout_width="0dp"
+            android:id="@+id/xPowerYbutton" />
+        <Constraint
+            android:layout_height="75dp"
+            motion:layout_constraintStart_toStartOf="@+id/tanButton"
+            motion:layout_constraintEnd_toEndOf="@+id/tanButton"
+            android:layout_width="0dp"
+            android:id="@+id/absolute"
+            motion:layout_constraintTop_toTopOf="@+id/digit_7" />
+        <Constraint
+            android:layout_height="75dp"
+            motion:layout_constraintStart_toStartOf="@+id/tanButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/squareRoot"
+            motion:layout_constraintTop_toTopOf="@+id/digit_4" />
+        <Constraint
+            android:id="@+id/digit_1"
+            motion:layout_constraintEnd_toEndOf="@+id/plusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toBottomOf="@+id/line_hor3"
+            motion:layout_constraintStart_toStartOf="@+id/plusButton" />
+        <Constraint
+            android:id="@+id/digit_8"
+            motion:layout_constraintEnd_toEndOf="@+id/minusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_7"
+            motion:layout_constraintStart_toStartOf="@+id/minusButton" />
+        <Constraint
+            android:id="@+id/mode"
+            motion:layout_constraintEnd_toEndOf="@+id/divButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_1"
+            motion:layout_constraintStart_toStartOf="@+id/divButton" />
+        <Constraint
+            android:id="@+id/digit_3"
+            motion:layout_constraintEnd_toEndOf="@+id/multiButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_1"
+            motion:layout_constraintStart_toStartOf="@+id/multiButton" />
+        <Constraint
+            android:id="@+id/digit_2"
+            motion:layout_constraintEnd_toEndOf="@+id/minusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_1"
+            motion:layout_constraintStart_toStartOf="@+id/minusButton" />
+        <Constraint
+            android:id="@+id/sign"
+            motion:layout_constraintEnd_toEndOf="@+id/divButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_4"
+            motion:layout_constraintStart_toStartOf="@+id/divButton" />
+        <Constraint
+            android:id="@+id/digit_6"
+            motion:layout_constraintEnd_toEndOf="@+id/multiButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_4"
+            motion:layout_constraintStart_toStartOf="@+id/multiButton" />
+        <Constraint
+            android:id="@+id/digit_5"
+            motion:layout_constraintEnd_toEndOf="@+id/minusButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_4"
+            motion:layout_constraintStart_toStartOf="@+id/minusButton" />
+        <Constraint
+            android:id="@+id/clear_button"
+            motion:layout_constraintEnd_toEndOf="@+id/divButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_7"
+            motion:layout_constraintStart_toStartOf="@+id/divButton" />
+        <Constraint
+            android:id="@+id/digit_9"
+            motion:layout_constraintEnd_toEndOf="@+id/multiButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            motion:layout_constraintTop_toTopOf="@+id/digit_7"
+            motion:layout_constraintStart_toStartOf="@+id/multiButton" />
+    </ConstraintSet>
+</MotionScene>
